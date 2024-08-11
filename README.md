@@ -31,7 +31,7 @@ Here's the updated cheat sheet with the additional information on deploying your
 2. **Create a New Service (Copy Existing)**
    - Copy an existing service file to create a new one:
      ```sh
-     cp /etc/systemd/system/collector.service /etc/systemd/system/newcollector.service
+     cp /etc/systemd/system/collector.service /etc/systemd/system/santossystem.service
      ```
 
 3. **Check Service Status**
