@@ -43,13 +43,13 @@ Here's the updated cheat sheet with the additional information on deploying your
 4. **Start a Service**
    - Start the service:
      ```sh
-     service santossystem start
+     systemctl start santossystem.service
      ```
 
 5. **Stop a Service**
    - Stop the service:
      ```sh
-     service santossystem stop
+     systemctl stop santossystem.service
      ```
 
 6. **Enable/Disable a Service on Startup**
