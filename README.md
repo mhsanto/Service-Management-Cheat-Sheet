@@ -4,6 +4,10 @@ Here’s a cheat sheet based on the information your senior developer provided. 
 
 ---
 
+Here's the updated cheat sheet with the additional information on deploying your Go application:
+
+---
+
 # Service Management Cheat Sheet
 
 ## System Services
@@ -116,6 +120,43 @@ Here’s a cheat sheet based on the information your senior developer provided. 
 - Restart, stop, or start these services through the UI if applicable.
 - Check the uptime after restarting to ensure it has restarted successfully.
 
+## Deploying Your Go Application
+
+1. **Navigate to the Project Directory**
+   - Change to your Go project’s directory:
+     ```sh
+     cd /bundle/remote
+     ```
+
+2. **Build the Application**
+   - Compile your Go code into a binary executable:
+     ```sh
+     go build
+     ```
+   - This creates a binary named `remote`.
+
+3. **Transfer the Binary to the Target Machine**
+   - Securely copy the binary to the target machine:
+     ```sh
+     scp remote idx@[IP_ADDRESS]:~/remote
+     ```
+   - Replace `[IP_ADDRESS]` with the actual IP address of your target machine.
+
+4. **SSH into the Target Machine**
+   - Log in to the target machine as the `idx` user:
+     ```sh
+     ssh idx@[IP_ADDRESS]
+     ```
+
+5. **Run the Application**
+   - Execute the application on the target machine:
+     ```sh
+     sudo ./remote -port=7686
+     ```
+   - Use `sudo` if elevated privileges are required to restart services.
+
+6. **Alternative: Create a System Service**
+   - Instead of running the application manually, consider creating a system service to manage it, allowing for better control and automatic management.
+
 ---
 
-Feel free to customize or add any specific instructions your senior developer might have mentioned.
