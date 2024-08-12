@@ -4,12 +4,6 @@ This cheat sheet provides a quick reference guide for managing both system and u
 
 ---
 
-Here's the updated cheat sheet with the additional information on deploying your Go application:
-
----
-
-# Service Management Cheat Sheet
-
 ## System Services
 
 ### Location
