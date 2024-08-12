@@ -15,8 +15,8 @@ Here's the updated cheat sheet with the additional information on deploying your
 ### Location
 - System services are located in `/etc/systemd/system/`.
 - Example services:
-  - `angelshoe.service`
-  - `collector.service`
+  - `exampleapp.service`
+  - `datahandler.service`
 
 ### Service File
 - These service files are entry points to the binary.
