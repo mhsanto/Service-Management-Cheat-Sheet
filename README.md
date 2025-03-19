@@ -110,7 +110,11 @@ This cheat sheet provides a quick reference guide for managing both system and u
      rm /etc/systemd/user/usermanager.service
 
      ```
-
+6. **View User Service Logs**
+   - View and follow the logs for a user service (while logged in as the user that runs the service):
+   ```sh
+   journalctl --user -fu serviceName.service
+   ```
 ### Additional Notes
 - Restart, stop, or start these services through the UI if applicable.
 - Check the uptime after restarting to ensure it has restarted successfully.
